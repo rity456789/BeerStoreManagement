@@ -1,0 +1,77 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Management" Height="650" Width="900" Left="233" Top="59">
+    <Grid Background="#FFA7DEEA">
+        <Label HorizontalAlignment="Center" Margin="0,50,0,0" Content="Binh Beer Store" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="100" Width="660
+                   " Height="120" FontWeight="Bold" FontFamily="Mistral"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="650" Margin="120,175,0,0" Height="80" Background="#FF7474DD" Click="Product_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/phone.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Product" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="300"  Margin="120,275,0,0" Height="80" Background="#FF7474DD" Click="btnImport_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/import.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Import" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="300"  Margin="470,275,0,0" Height="80" Background="#FF7474DD" Click="btnSell_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/sell.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Sell" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="300"  Margin="120,375,0,0" Height="80" Background="#FF7474DD" Click="btnCustomer_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/customer.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Customer" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="300"  Margin="470,375,0,0" Height="80" Background="#FF7474DD" Click="btnSuplier_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/suplier.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Suplier" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="300"  Margin="120,475,0,0" Height="80" Background="#FF7474DD" Click="btnReport_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/report.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Report" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="300"  Margin="470,475,0,0" Height="80" Background="#FF7474DD" Click="btnQuit_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/quit.png" Height="64">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Quit" FontSize="48">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+
+    </Grid>
+</Window>

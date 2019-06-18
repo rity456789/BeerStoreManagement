@@ -1,0 +1,38 @@
+﻿<Window x:Class="GUI.Sell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Sell product" Height="600" Width="400" Left="483" Top="84">
+    <Grid  Background="#FFA7DEEA">
+        <Label Height="60" Margin="0,30,0,0" FontSize="40" BorderBrush="#FF080707" BorderThickness="3" Content="Sell Product" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Mistral"/>
+        <StackPanel Width="120" Height="300" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,130,0,0">
+            <Label Height="50" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" Content="Product" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Label Height="50" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" Content="Customer" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Label Height="50" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" Content="Amount" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Label Height="50" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" Content="Date" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Label Height="50" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" Content="Discount" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Label Height="50" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" Content="Total Price" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        </StackPanel>
+        <StackPanel Width="180" Height="300" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,130,0,0">
+            <Button x:Name="btnProduct" Height="50" Width="180" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFA7DEEA" Click="btnChooseProduct"/>
+            <Button x:Name="btnCustomer" Height="50" Width="180" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFA7DEEA" Click="btnChooseCustomer"/>
+            <TextBox x:Name="txtAmount" Height="50" Width="180" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFA7DEEA" TextChanged="EditAmountChanged"/>
+            <Label x:Name="lblDate" Height="50" Width="180" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFA7DEEA"/>
+            <Button x:Name="btnDiscount" Height="50" Width="180" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFA7DEEA" Click="btnDiscount_Clicked"/>
+            <Label x:Name="lblTotal" Height="50" Width="180" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" BorderBrush="#FF080707" BorderThickness="3" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#FFA7DEEA"/>
+        </StackPanel>
+        <Label x:Name="lblNotice" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,450,50,0" FontSize="14" Foreground="#FFFB0404"/>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"  Margin="0,490,0,0" Height="60" Background="#FF7474DD" Click="btnSell_Clicked">
+            <WrapPanel>
+                <Image Source="Sources/sell.png" Height="50">
+                </Image>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Sell" FontSize="40">
+                </TextBlock>
+            </WrapPanel>
+        </Button>
+    </Grid>
+</Window>
