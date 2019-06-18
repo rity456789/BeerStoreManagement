@@ -62,8 +62,8 @@ namespace GUI
 
         private void btnReport_Clicked(object sender, RoutedEventArgs e)
         {
-            //Report reportWindow = new Report();
-            //reportWindow.ShowDialog();
+            Report reportWindow = new Report();
+            reportWindow.ShowDialog();
         }
     }
 }

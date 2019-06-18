@@ -157,6 +157,13 @@ namespace GUI
 
             ProductBUS bus = new ProductBUS();
             ProductDTO result = bus.LoadOneProduct(Global.IDProduct);
+            if(result.IvenNum < amount)
+            {
+                lblNotice.Content = $"There are just {result.IvenNum} crate in warehouse";
+                lblNotice.Visibility = Visibility.Visible;
+                return;
+            }
+
             result.IvenNum = result.IvenNum - amount;
             bus.UpdateProduct(result);
 
